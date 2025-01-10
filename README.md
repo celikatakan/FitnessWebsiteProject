@@ -20,7 +20,7 @@ A responsive fitness website that showcases various features including classes, 
 ## **Technologies Used**
 
 - **HTML5**
-- **CSS3**
+- **CSS**
 - **JavaScript**
 - [Netlify](https://www.netlify.com/) (Hosting)
 
