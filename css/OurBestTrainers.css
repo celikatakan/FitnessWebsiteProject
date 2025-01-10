@@ -1,0 +1,204 @@
+/* OUR BEST TRAINERS SECTION */
+
+/* Section title styling */
+.section-title h2 {
+  padding-top: 2rem; /* Add top padding */
+  text-align: center; /* Center-align title */
+  color: #355592; /* Dark blue color */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Font family */
+}
+
+/* Section description paragraph styling */
+.section-title p {
+  text-align: center; /* Center-align text */
+  color: #333333; /* Dark gray color */
+}
+
+/* Trainer container styling */
+#trainers .container {
+  flex-direction: column; /* Stack items vertically */
+  padding: 0 160px; /* Add horizontal padding */
+}
+
+/* Trainer images container styling */
+#trainers .images {
+  display: flex; /* Flexbox container for images */
+  position: relative; /* Position relative for absolute children */
+  justify-content: space-between; /* Distribute images evenly */
+  margin-top: 40px; /* Add top margin */
+}
+
+/* Image container styling */
+.img-container {
+  position: relative; /* Position for child elements */
+  display: inline-block; /* Inline-block layout */
+
+  /* Hover effect for outer frame and content */
+  &:hover {
+      .outer-frame {
+          &::after {
+              width: 80%; /* Change width on hover */
+              left: 24px; /* Adjust position */
+              right: 24px; /* Adjust position */
+          }
+      }
+      .outer-frame .side.left {
+          height: 50%; /* Adjust left side height */
+          bottom: 16px; /* Adjust bottom position */
+      }
+      .outer-frame .side.right {
+          height: 50%; /* Adjust right side height */
+          bottom: 16px; /* Adjust bottom position */
+      }
+      .img-content {
+          bottom: 16px; /* Adjust bottom position */
+          opacity: 1; /* Make content visible */
+      }
+  }
+}
+
+/* Image styling */
+.our-img {
+  width: 300px; /* Set image width */
+  height: 350px; /* Set image height */
+  border: 2px solid #f39f15; /* Orange border */
+  border-radius: 4px; /* Rounded corners */
+  align-items: center; /* Center-align content */
+  justify-content: center; /* Center-align content */
+}
+
+/* Outer frame around images */
+.outer-frame {
+  position: absolute; /* Position absolutely relative to container */
+  top: 0; /* Align to top */
+  left: 0; /* Align to left */
+  width: 300px; /* Set frame width */
+  height: 350px; /* Set frame height */
+  border: none; /* No border */
+
+  /* Top and bottom border lines */
+  &::before, &::after {
+      content: ''; /* Empty content for pseudo-elements */
+      position: absolute; /* Absolute positioning */
+      background-color: #355592; /* Dark blue background */
+      transition: all 0.5s ease; /* Smooth transition for animations */
+  }
+}
+
+/* Top border line styling */
+.outer-frame::before {
+  width: 80px; /* Set width */
+  height: 8px; /* Set height */
+  top: -8px; /* Position above frame */
+  left: calc(50% - 40px); /* Center align horizontally */
+}
+
+/* Bottom border line styling */
+.outer-frame::after {
+  width: 80px; /* Set width */
+  height: 8px; /* Set height */
+  bottom: -8px; /* Position below frame */
+  left: calc(50% - 40px); /* Center align horizontally */
+}
+
+/* Left and right side border styling */
+.outer-frame .side {
+  position: absolute; /* Absolute positioning */
+  background-color: #355592; /* Dark blue background */
+  transition: all 0.5s ease; /* Smooth transition for animations */
+}
+
+/* Left side border styling */
+.outer-frame .side.left {
+  width: 8px; /* Set width */
+  height: 120px; /* Set height */
+  left: -8px; /* Position to the left */
+  top: calc(50% - 60px); /* Center vertically */
+}
+
+/* Right side border styling */
+.outer-frame .side.right {
+  width: 8px; /* Set width */
+  height: 120px; /* Set height */
+  right: -8px; /* Position to the right */
+  top: calc(50% - 60px); /* Center vertically */
+}
+
+/* Image content box styling */
+.img-content {
+  color: #e5e7eb; /* Light gray text color */
+  position: absolute; /* Position absolutely */
+  left: 16px; /* Set left position */
+  width: 268px; /* Set width */
+  bottom: 0; /* Align to bottom */
+  padding: 24px 8px; /* Add padding */
+  text-align: center; /* Center-align text */
+  background-color: #355592; /* Dark blue background */
+  clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%); /* Custom polygon shape */
+  opacity: 0; /* Hide content initially */
+  transition: all 250ms linear; /* Smooth transition */
+}
+
+/* Paragraph styling inside image content */
+.img-content p {
+  color: #fff; /* White text color */
+  font-size: 14px; /* Font size */
+  font-weight: 400; /* Font weight */
+  line-height: 1.2; /* Line height */
+  margin-top: 8px; /* Top margin */
+}
+
+/* RESPONSIVE SETTINGS */
+@media (max-width: 576px) { /* Styles for devices with width 576px or less */
+#trainers .container {
+    padding: 0 15px; /* Adjust horizontal padding */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align items */
+}
+
+.section-title h2 {
+    font-size: 1.8rem; /* Adjust title font size */
+    text-align: center; /* Center-align title */
+}
+
+.section-title p {
+    text-align: center; /* Center-align paragraph */
+    width: 100%; /* Use full width */
+    margin: 1rem 0; /* Add top and bottom margin */
+}
+
+#trainers .images {
+    display: flex; /* Use flexbox for image container */
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center-align images */
+    margin-top: 40px; /* Add top margin */
+    gap: 30px; /* Add gap between images */
+}
+
+.img-container {
+    margin-bottom: 20px; /* Add margin between image containers */
+    position: relative; /* Position for absolute children */
+    width: 100%; /* Set width to 100% */
+    max-width: 300px; /* Set maximum width */
+}
+
+.our-img {
+    width: 100%; /* Set image width to 100% */
+    height: auto; /* Set height automatically */
+}
+
+.outer-frame {
+    position: absolute; /* Position absolutely */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    width: 100%; /* Set frame width to 100% */
+    height: 100%; /* Set frame height to 100% */
+}
+
+.img-content {
+    width: 100%; /* Set image content width to 100% */
+    margin-bottom: 20px; /* Add bottom margin */
+    left: 0; /* Align to left */
+    padding: 24px 8px; /* Add padding to content */
+}
+}

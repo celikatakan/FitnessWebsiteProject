@@ -1,0 +1,85 @@
+/* PURCHASE FROM US SECTION */
+.cls-purchase {
+  position: relative; /* Positioning context for child elements */
+  text-align: center; /* Center-align text */
+  padding: 50px 0; /* Add vertical padding */
+}
+
+.purchase-section {
+  margin-bottom: 30px; /* Space below each section */
+}
+
+.purchase-section h2 {
+  font-size: 1.5rem; /* Font size for heading */
+  margin-bottom: 10px; /* Space below heading */
+  padding: 0; /* Reset padding */
+  color: #355592; /* Dark blue text color */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Font family */
+}
+
+.purchase-section p {
+  color: #333333; /* Dark gray text color */
+  margin: 10px 0; /* Add vertical margin */
+  padding: 0 10px; /* Horizontal padding */
+  text-align: center; /* Center-align text */
+}
+
+.purchase-card-contanier {
+  display: flex; /* Flexbox container */
+  justify-content: center; /* Center items horizontally */
+  flex-wrap: wrap; /* Wrap items when the screen size is smaller */
+  gap: 20px; /* Space between items */
+}
+
+.purchase-card {
+  width: 200px; /* Set card width */
+  background-color: #fff; /* White background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 20px 30px 40px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  overflow: hidden; /* Prevent content from overflowing */
+}
+
+.purchase-card img {
+  width: 120%; /* Make image slightly larger than card */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.purchase-layer {
+  padding: 20px; /* Add padding inside the card */
+  text-align: center; /* Center-align text */
+}
+
+.purchase-layer h4 {
+  margin-bottom: 10px; /* Space below heading */
+  font-size: 18px; /* Font size for subheading */
+}
+
+.purchase-layer p {
+  margin-bottom: 15px; /* Space below paragraph */
+}
+
+.price a {
+  display: inline-flex; /* Flexbox for the price link */
+  align-items: center; /* Align items vertically */
+  color: #355592; /* Dark blue color */
+  text-decoration: none; /* Remove underline */
+  font-size: 16px; /* Font size for the link */
+  font-weight: bold; /* Bold text */
+}
+
+.price i {
+  margin-right: 20px; /* Space between icon and text */
+}
+
+/* RESPONSIVE SETTINGS */
+@media (max-width: 576px) { /* Styles for devices with width 576px or less */
+.purchase-card-contanier {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center-align cards */
+}
+
+.purchase-card {
+    width: 100%; /* Set card width to 100% */
+    max-width: 300px; /* Set maximum width for cards */
+}
+}

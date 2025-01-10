@@ -1,0 +1,170 @@
+/* OUR CLASSES SECTION */
+.classes {
+  position: relative; /* Positioning context for child elements */
+}
+
+.class-container {
+  padding-bottom: 5%; /* Add padding at the bottom */
+  width: 60%; /* Set container width */
+  margin: auto; /* Center container horizontally */
+}
+
+.bg-shape {
+  position: absolute; /* Position relative to parent */
+  right: 0; /* Align to the right */
+  z-index: -1; /* Place behind other elements */
+  height: 60%; /* Set height */
+  width: 60%; /* Set width */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 25% 100%, 12.5% 50%); /* Create custom shape */
+  background: #f6f6f6; /* Light gray background color */
+}
+
+.class-container h2 {
+  padding-top: 2rem; /* Add top padding */
+  text-align: center; /* Center-align heading */
+  color: #355592; /* Dark blue color */
+  font-weight: 700; /* Bold font weight */
+}
+
+.line {
+  border: solid 3px #f39f15; /* Orange line */
+  color: #f39f15; /* Orange color */
+  width: 8%; /* Line width */
+  margin: auto; /* Center the line */
+  border-radius: 100px; /* Rounded corners */
+  margin-top: 1rem; /* Top margin */
+  margin-bottom: 1rem; /* Bottom margin */
+}
+
+.title2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Font family */
+}
+
+.classes p {
+  text-align: center; /* Center-align text */
+  color: #333333; /* Dark gray text color */
+}
+
+.container-btn {
+  display: flex; /* Flexbox container for buttons */
+  justify-content: space-around; /* Distribute buttons evenly */
+  flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+  gap: 10%; /* Space between buttons */
+}
+
+.container-btn .class-btn {
+  background-color: #355592; /* Dark blue background */
+  position: relative; /* Positioning context for child elements */
+  color: white; /* White text color */
+  font-weight: 800; /* Bold font weight */
+  border-radius: 5px; /* Rounded corners */
+  width: 100px; /* Set width */
+  height: 50px; /* Set height */
+  margin-top: 2rem; /* Add top margin */
+  border: none; /* Remove border */
+}
+
+.container-btn .class-btn:hover {
+  background-color: #f39f15; /* Change background on hover */
+}
+
+.container-btn .class-btn.active {
+  background-color: #f39f15; /* Active state background */
+  transition: opacity 500ms ease; /* Smooth transition for opacity */
+  opacity: 1; /* Full opacity */
+}
+
+.container-btn .class-btn.active:after {
+  content: ""; /* Add an arrow below the button */
+  position: absolute; /* Position the arrow */
+  bottom: -10px; /* Position it below the button */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center arrow */
+  border-style: solid; /* Style the arrow */
+  border-width: 12px 16px 0px 16px; /* Arrow size */
+  border-color: #f39f15 transparent transparent transparent; /* Arrow color */
+  transition: opacity 500ms ease; /* Smooth transition */
+  opacity: 1; /* Full opacity */
+}
+
+.container-btn .class-btn:not(.active):after {
+  opacity: 0; /* Hide arrow if not active */
+}
+
+#features-container {
+  padding-top: 1.5rem; /* Add top padding */
+  display: flex; /* Flexbox container */
+  gap: 10%; /* Space between items */
+  align-items: center; /* Align items vertically */
+}
+
+#features-container h6 {
+  padding-top: 2rem; /* Top padding */
+  font-weight: 800; /* Bold font weight */
+  text-align: start; /* Left-align text */
+  font-size: 1.5rem; /* Font size */
+}
+
+#features-container p {
+  font-weight: 600; /* Medium font weight */
+  text-align: start; /* Left-align text */
+  margin-top: 1.5rem; /* Top margin */
+}
+
+#features-container img {
+  width: 50%; /* Set image width */
+}
+
+/* RESPONSIVE SETTINGS */
+@media (max-width: 576px) { /* Styles for devices with width 576px or less */
+  .class-container {
+    width: 100%; /* Set class container width to 100% */
+    padding: 0; /* Remove padding */
+  }
+
+  .classes p {
+    text-align: start; /* Left-align text */
+    margin: 0 auto; /* Center align with auto margin */
+    width: 100%; /* Set width to 100% */
+    padding: 10px; /* Add padding */
+  }
+
+  .title {
+    text-align: center; /* Center-align title */
+  }
+
+  .container-btn {
+    display: grid; /* Use grid layout for buttons */
+    grid-template-columns: 1fr 1fr; /* Two buttons per row */
+    gap: 10px; /* Space between buttons */
+    width: 100%; /* Set container width */
+    margin-top: 20px; /* Top margin */
+    justify-items: center; /* Center-align buttons */
+  }
+
+  .container-btn button {
+    width: 90%; /* Set button width to 90% */
+    margin: 10px 0; /* Add vertical margin */
+  }
+
+  #features-container {
+    display: block; /* Stack items vertically */
+  }
+
+  #features-container p {
+    word-break: break-all; /* Allow long words to break */
+    padding: 20px; /* Add padding */
+    margin: 0; /* Remove margin */
+  }
+
+  #features-container h6 {
+    padding: 20px; /* Add padding */
+    font-size: 20px; /* Set font size */
+    margin: 0; /* Remove margin */
+  }
+
+  #features-container img {
+    width: 100%; /* Set image width to 100% */
+    margin-top: 20px; /* Add top margin */
+  }
+}

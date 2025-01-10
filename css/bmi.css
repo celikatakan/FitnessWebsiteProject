@@ -1,0 +1,116 @@
+/* BMI Section */
+.bmi-container {
+  display: flex; /* Use flexbox layout */
+  width: 60%; /* Set width to 60% */
+  margin: auto; /* Center the container */
+  gap: 10%; /* Add space between elements */
+  padding-bottom: 2rem; /* Add bottom padding */
+}
+
+.calculate-container {
+  width: 50%; /* Set width to 50% */
+  margin: auto; /* Center the container */
+}
+
+/* Heading style in BMI section */
+.calculate-container h1 {
+  color: #355592; /* Set header color */
+  font-weight: 800; /* Make the header bold */
+  text-align: left; /* Align text to the left */
+}
+
+/* Paragraph style in BMI section */
+.calculate-container p {
+  font-weight: 700; /* Make the paragraph bold */
+  text-align: left; /* Align text to the left */
+  margin: 20px; /* Add margin around the paragraph */
+}
+
+/* Input group style in BMI section */
+.calculate-container .input-group {
+  display: flex; /* Use flexbox layout */
+  justify-content: flex-start; /* Align items to the start */
+  align-items: center; /* Vertically center items */
+  gap: 8px; /* Add space between inputs */
+}
+
+/* Style for input fields in BMI section */
+.calculate-container input {
+  width: 100px; /* Set width of input fields */
+  padding: 4px; /* Add padding inside input */
+  border-radius: 3px; /* Rounded corners for input */
+  border: 2px solid rgba(0, 0, 0, 0.342); /* Border with a slight transparency */
+  text-align: center; /* Center text inside input */
+}
+
+/* Image style in BMI section */
+.BMI-img {
+  width: 100%; /* Set the image width to 100% */
+}
+
+/* Image container styling */
+.BMI-img-container {
+  text-align: center; /* Center align the image container */
+  position: relative; /* Position elements relative to this container */
+}
+
+/* Triangle styling */
+.triangle {
+  position: absolute; /* Position triangle absolutely inside the container */
+  width: 0; /* No width */
+  height: 0; /* No height */
+  border: 15px solid transparent; /* Make borders transparent */
+  border-top: 0; /* No top border */
+  border-bottom: 30px solid #f39f15; /* Bottom border with color */
+  left: 6%; /* Position the triangle 6% from the left */
+}
+
+/* Mobile styling (max-width: 576px) */
+@media (max-width: 576px) {
+  .bmi-container {
+    display: block; /* Stack elements vertically */
+    flex-direction: column; /* Arrange elements in column */
+    width: 100%; /* Set container width to 100% */
+    gap: 20px; /* Add space between elements */
+  }
+
+  .calculate-container {
+    width: 100%; /* Set width to 100% */
+    margin-bottom: 70px; /* Add bottom margin */
+    text-align: left; /* Align text to the left */
+  }
+
+  /* Heading styling in mobile */
+  .calculate-container h1 {
+    margin: 20px; /* Add margin around header */
+    font-size: 30px; /* Adjust font size */
+    margin-left: 30px; /* Add left margin */
+  }
+
+  /* Paragraph styling in mobile */
+  .calculate-container p {
+    margin: 20px 0; /* Add vertical margin */
+    margin-left: 20px; /* Add left margin */
+  }
+
+  /* Input field styling in mobile */
+  .calculate-container input {
+    width: 50%; /* Set input width to 50% */
+    margin: 10px; /* Add margin around inputs */
+    justify-content: start; /* Align inputs to the start */
+    margin-left: 30px; /* Add left margin */
+  }
+
+  /* Image container styling on mobile */
+  .BMI-img-container {
+    width: 200%; /* Set image container width to 200% */
+    max-width: 100%; /* Ensure the image doesn't exceed 100% width */
+    align-items: center; /* Vertically center the image */
+    justify-content: center; /* Center the content */
+  }
+
+  /* Image styling on mobile */
+  .BMI-img {
+    width: 100%; /* Set image width to 100% */
+  }
+}

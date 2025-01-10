@@ -1,0 +1,92 @@
+/* Contact container styling */
+.contact-container {
+  padding-top: 1rem; /* Add top padding */
+}
+
+/* Header styling in the contact section */
+.contact-container h2 {
+  text-align: center; /* Center the header */
+  color: #355592; /* Set the header color */
+  font-weight: 700; /* Make the header bold */
+}
+
+/* Paragraph styling in the contact section */
+.contact-container p {
+  text-align: center; /* Center align the text */
+  color: #333333; /* Set the text color */
+}
+
+/* Message container styling */
+.message-container {
+  display: flex; /* Use flexbox layout */
+  width: 60%; /* Set width to 60% */
+  margin: auto; /* Center the container */
+  gap: 5rem; /* Add space between items */
+  padding-top: 3rem; /* Add top padding */
+  padding-bottom: 3rem; /* Add bottom padding */
+  color: #333333; /* Set text color */
+}
+
+/* Input container styling */
+.input-container {
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack items vertically */
+  gap: 1.5rem; /* Add space between input fields */
+  margin-top: 2rem; /* Add top margin */
+}
+
+/* Input container header styling */
+.input-container h3 {
+  color: #333333; /* Set color for sub-header */
+}
+
+/* Styling for input fields and textarea */
+.input-container input,
+textarea {
+  background-color: #f1f8ff; /* Set background color */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px; /* Add padding inside input fields */
+}
+
+/* Google map iframe styling */
+.googleMap iframe {
+  width: 150%; /* Set width to 150% */
+  height: 100%; /* Set height to 100% */
+}
+
+/* Media query for mobile devices (max-width: 576px) */
+@media (max-width: 576px) {
+  .message-container {
+    display: block; /* Stack items vertically on small screens */
+    gap: 1rem; /* Add space between items */
+  }
+
+  /* Phone container styling on mobile */
+  .phone-container {
+    width: 100%; /* Set width to 100% */
+    margin-bottom: 1rem; /* Add bottom margin */
+  }
+
+  /* Input container styling on mobile */
+  .input-container {
+    width: 100%; /* Set width to 100% */
+    margin-bottom: 1rem; /* Add bottom margin */
+  }
+
+  /* Google map container styling on mobile */
+  .googleMap {
+    width: 100%; /* Set width to 100% */
+  }
+
+  /* Google map iframe styling on mobile */
+  .googleMap iframe {
+    width: 100%; /* Set iframe width to 100% */
+    height: 450px; /* Set a fixed height for mobile */
+  }
+
+  /* Paragraph styling in the contact section on mobile */
+  .contact-container p {
+    text-align: center; /* Center align text */
+    padding: 15px; /* Add padding */
+  }
+}

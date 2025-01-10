@@ -1,0 +1,125 @@
+/* REVIEW CLIENT SECTION */
+.review {
+  position: relative; /* Positioning context for child elements */
+  text-align: center; /* Center-align text */
+  padding: 50px 0; /* Add vertical padding */
+  background-color: rgb(237, 243, 250); /* Light blue background color */
+}
+
+.review-container {
+  display: flex; /* Flexbox container */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.review-section {
+  margin-bottom: 30px; /* Space below each section */
+  margin: auto; /* Center section horizontally */
+  width: 60%; /* Set section width */
+}
+
+.review-section h2 {
+  font-size: 1.5rem; /* Font size for heading */
+  margin-bottom: 10px; /* Space below heading */
+  padding: 0; /* Reset padding */
+  color: #355592; /* Dark blue text color */
+}
+
+.review-section p {
+  color: #333333; /* Dark gray text color */
+  margin: 10px 0; /* Add vertical margin */
+  padding: 0 10px; /* Horizontal padding */
+  text-align: center; /* Center-align text */
+}
+
+.clients {
+  display: flex; /* Flexbox container for clients */
+  justify-content: center; /* Center items horizontally */
+}
+
+.client-container {
+  display: flex; /* Flexbox container */
+  flex-direction: column; /* Stack items vertically */
+  margin: 0 20px; /* Horizontal margin */
+  padding: 100px; /* Add padding (to be adjusted) */
+}
+
+.client {
+  display: flex; /* Flexbox for client details */
+  align-items: center; /* Align items vertically */
+  gap: 16px; /* Space between items */
+}
+
+.client img {
+  width: 60px; /* Image width */
+  height: 60px; /* Image height */
+  border-radius: 50%; /* Round image corners */
+}
+
+.client-details {
+  display: flex; /* Flexbox container */
+  flex-direction: column; /* Stack items vertically */
+  gap: 12px; /* Space between items */
+  margin-bottom: 16px; /* Space below details */
+}
+
+.client-details p {
+  margin: 0; /* Reset margin */
+}
+
+.client-comment {
+  position: relative; /* Positioning context for child elements */
+  text-align: start; /* Align text to the left */
+  padding: 0 16px; /* Add horizontal padding */
+  font-size: 14px; /* Text font size */
+  color: white; /* White text color */
+  background-color: #355592; /* Dark blue background color */
+  margin: 10px; /* Add margin */
+}
+
+.client-comment p {
+  font-size: 16px; /* Font size for comment text */
+  padding: 20px; /* Add padding */
+}
+
+.triangle-1 {
+  position: absolute; /* Position within parent */
+  right: 0px; /* Align to the right */
+  bottom: -40px; /* Position below parent */
+  width: 40px; /* Width of the triangle */
+  height: 40px; /* Height of the triangle */
+  background-color: #355592; /* Dark blue background */
+  clip-path: polygon(0 0, 100% 0, 0 100%); /* Create triangle shape */
+}
+
+.triangle-2 {
+  position: absolute; /* Position within parent */
+  left: 0px; /* Align to the left */
+  bottom: -40px; /* Position below parent */
+  width: 40px; /* Width of the triangle */
+  height: 40px; /* Height of the triangle */
+  background-color: #355592; /* Dark blue background */
+  clip-path: polygon(100% 100%, 100% 0, 0 0); /* Create triangle shape */
+}
+
+/* RESPONSIVE SETTINGS */
+@media (max-width: 576px) { /* Styles for devices with width 576px or less */
+.clients {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center-align cards */
+}
+
+.client-container {
+    margin: 20px 0; /* Add vertical margin */
+    padding: 0; /* Remove padding */
+}
+
+.client {
+    text-align: start; /* Align text to the left */
+    padding-left: 20px; /* Add left padding */
+}
+
+.client-comment {
+  padding: 20px; /* Adjust padding */
+}
+}

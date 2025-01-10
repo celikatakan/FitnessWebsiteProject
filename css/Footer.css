@@ -1,0 +1,109 @@
+/* Footer Styling */
+footer {
+  background-color: #355592; /* Set the background color */
+  padding: 40px 0; /* Top and bottom padding */
+}
+
+/* Center the footer container */
+.footer-container {
+  max-width: 1200px; /* Set a maximum width */
+  margin: 0 auto; /* Center the footer container */
+}
+
+/* Logo and text alignment */
+.footer-logo-section {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: flex-start; /* Align items to the left */
+  justify-content: center; /* Center the content vertically */
+  padding-left: 200px; /* Add padding to the left */
+}
+
+/* Logo size */
+.footer-logo {
+  max-width: 150px; /* Set the maximum logo width */
+  margin-bottom: 10px; /* Add margin between logo and text */
+}
+
+/* Paragraph text styling in the footer */
+.footer-logo-section p {
+  color: #fff; /* Set text color to white */
+  font-size: 14px;
+  line-height: 1.6; /* Set line height */
+  max-width: 770px; /* Limit text width */
+  margin: 0; /* Remove extra margin */
+}
+
+/* Information section styling */
+.footer-info-container {
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: center; /* Center the content horizontally */
+  gap: 40px; /* Add space between columns */
+  margin: 10px 0; /* Top and bottom margin */
+  padding: 0 20px; /* Add padding to left and right */
+}
+
+/* Styling for each footer section */
+.footer-section {
+  border-radius: 5px; /* Rounded corners */
+  padding: 20px; /* Add padding inside sections */
+  flex-basis: 30%; /* Set section width to 30% */
+  max-width: 300px; /* Limit the maximum width */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Header styling in footer sections */
+.footer-section h4 {
+  margin-bottom: 15px; /* Add space below the header */
+  color: #fff; /* Set header color */
+  font-size: 23px;
+}
+
+/* Styling for unordered list in footer sections */
+.footer-section ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+}
+
+/* List item styling */
+.footer-section ul li {
+  margin-bottom: 10px; /* Add space between list items */
+}
+
+/* Link styling */
+.footer-section ul li a {
+  color: #fff; /* Set link color to white */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Hover effect for links */
+.footer-section ul li a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
+/* Responsive styles for smaller screen sizes */
+@media (max-width: 576px) {
+  .footer-container {
+      flex-direction: column; /* Stack the main container vertically */
+      align-items: flex-start; /* Align items to the left */
+  }
+
+  .footer-logo-section {
+      text-align: left; /* Align the logo section text to the left */
+      padding-left: 10px; /* Reduce left padding */
+  }
+
+  .footer-info-container {
+      display: flex; /* Continue displaying items horizontally */
+      justify-content: space-between; /* Distribute space evenly */
+      width: 100%; /* Set to full width */
+      padding: 0; /* Remove padding */
+      gap: 40px; /* Add space between items */
+  }
+
+  .footer-section {
+      flex-basis: 50%; /* Set each section to 50% width */
+      max-width: 300px; /* Limit maximum width */
+      margin-bottom: 20px; /* Add bottom margin */
+  }
+}

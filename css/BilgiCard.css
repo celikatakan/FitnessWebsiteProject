@@ -1,0 +1,48 @@
+/* Information Cards */
+.info-card-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center the cards horizontally */
+  padding: 20px; /* Add padding around the container */
+  list-style-type: none; /* Remove list bullets */
+  background-color: rgb(237, 243, 250); /* Set a light background color */
+}
+
+.info-card-container li {
+  background-color: #ffffff9a; /* Set background color for cards */
+  border-radius: 5px; /* Round the corners of the cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a soft shadow around the cards */
+  padding: 20px; /* Add padding inside the cards */
+  text-align: center; /* Center the text inside the cards */
+  flex: 1; /* Allow each card to grow equally */
+  margin: 0 20px; /* Add horizontal margin between cards */
+  min-width: 150px; /* Set a minimum width for the cards */
+  max-width: 200px; /* Set a maximum width for the cards */
+}
+
+/* Heading style for cards */
+.info-card-container h2 {
+  color: #355592; /* Set heading color */
+  font-size: 2em; /* Set font size for the heading */
+}
+
+/* Subheading style for cards */
+.info-card-container h3 {
+  color: #333333; /* Set color for subheading */
+  font-size: 1.2em; /* Set font size for the subheading */
+}
+
+/* Responsive settings (max-width: 577px) */
+@media (max-width: 577px) {
+  .info-card-container {
+    flex-direction: column; /* Arrange cards vertically */
+    align-items: center; /* Center cards horizontally */
+    padding: 10px; /* Add padding around the container */
+  }
+
+  .info-card-container li {
+    margin: 10px 0; /* Add vertical margin between cards */
+    width: 90%; /* Set card width to 90% of the container */
+    height: 200px; /* Increase the height of cards for mobile view */
+    padding: 30px; /* Increase padding inside the cards */
+  }
+}

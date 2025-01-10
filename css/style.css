@@ -1,0 +1,14 @@
+/* General settings for the page */
+* {
+  padding: 0; /* Reset padding for all elements */
+  margin: 0; /* Reset margin for all elements */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  border-width: 0; /* Default border width set to 0 */
+  border-style: solid; /* Default border style set to solid */
+  border-color: #e5e7eb; /* Default border color set to light gray */
+}
+
+::selection { /* Changes text and background color when text is selected */
+  color: white; /* Selected text color */
+  background-color: #e6b800; /* Selected background color */
+}
