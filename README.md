@@ -1,6 +1,6 @@
 # Powerfull Fitness Website
 
-A responsive fitness website that showcases various features including classes, trainers, a BMI calculator, customer reviews, and product purchase options. This project is developed with HTML, CSS, and JavaScript, and is hosted on [Netlify](https://www.netlify.com/).
+A responsive fitness website that showcases various features including classes, trainers, a BMI calculator, customer reviews, and product purchase options. This project is developed with HTML, CSS, and JavaScript, and is hosted on [Netlify](https://powerfullfitnesswebsite.netlify.app/).
 
 ---
 
