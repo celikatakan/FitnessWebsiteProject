@@ -181,6 +181,7 @@ function calculateBMI() {
   if (height > 0 && weight > 0) {
     // BMI formula: weight / height^2
     const bmi = weight / (height * height);
+    console.log("Calculated BMI:", bmi); // Debugging line to check the BMI value
     updateBMIMeter(bmi);
   }
 }
@@ -188,25 +189,24 @@ function calculateBMI() {
 function updateBMIMeter(bmi) {
   // Control the triangle position based on BMI value
   const triangle = document.querySelector('.triangle');
-  const imgContainer = document.querySelector('.img-container');
+  const imgContainer = document.querySelector('.BMI-img-container'); // Fixed class name
   
   // Set BMI limits based on visual scale
   const minBMI = 10;
-  const maxBMI = 40;
-  
-  // Calculate the triangle's movement based on container width
+  const maxBMI = 50; // Set realistic max BMI for scale
   const containerWidth = imgContainer.clientWidth;
   
   // Calculate triangle position within min-max BMI range
   let bmiPosition = ((bmi - minBMI) / (maxBMI - minBMI)) * containerWidth;
   
   // Clamp position to container bounds
-  if (bmiPosition < 0) bmiPosition = 0;
-  if (bmiPosition > containerWidth) bmiPosition = containerWidth;
-
+  bmiPosition = Math.max(0, Math.min(bmiPosition, containerWidth));
+  
   // Set the left position of the triangle
   triangle.style.left = `${bmiPosition}px`;
 }
+
+
 
 // OUR BEST TRAINERS SECTION
 document.querySelectorAll('.trainer-card').forEach(card => {
